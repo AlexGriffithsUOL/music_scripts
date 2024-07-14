@@ -57,7 +57,7 @@ class merge_folder_handler:
         self.log(self.metadata.consts.COMPOSING_INFO)
         path_list = self.compose_file_list()
         self.log(self.metadata.consts.COMPOSED_INFO)
-
+        self.log(f'{len(path_list)} files found!')
         self.log(self.metadata.consts.COPYING_INFO)
         self.copy_files_to_location(path_list)
         self.log(self.metadata.consts.COPIED_INFO)
